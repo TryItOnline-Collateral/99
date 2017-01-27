@@ -1,0 +1,11 @@
+open A,pop; # open the source file
+for(@c=<A>){ # read all lines into @c and iterate over them
+y/ 9//cd; # remove all but spaces and 9's
+s/ +/ /g;s/ $//; # remove duplicate and trailing spaces
+$p="((99)+|9+)";$a='+';
+s/^ $p$/$1='$2'?ord<>:<>/; # convert input
+s/^$p$/print'$2'?chr$1%128:$1/; # convert output
+s/^ $p /\$_=$1*011unless/&&y/ /|/; # convert goto
+s/ /=/;s/ /$a=-$a/ge; # convert assignment
+s!9+!${x.$&}=$&/9;"\$x$&"!eg} # initialize and convert variables
+eval$c[$_++]until/-/|$_>@c # run (program counter is in $_)
