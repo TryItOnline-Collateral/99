@@ -1,3 +1,5 @@
+#! /usr/bin/perl
+
 open A,pop; # open the source file
 for(@c=<A>){ # read all lines into @c and iterate over them
 y/ 9//cd; # remove all but spaces and 9's
