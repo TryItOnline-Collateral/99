@@ -1,2 +1,5 @@
 # 99
+
+**The materials in this repository were not produced by the owner of the repository. Please click on the link in the header to go to the original web site these materials were copied from. The purpose of this copy is to automate setup of a mirror for https://tryitonline.net. It's more straight forward to clone a repository than to parse a web page.**
+
 Implementation of [this language](https://esolangs.org/wiki/99) taken from [here](http://codegolf.stackexchange.com/a/47764/20416)
